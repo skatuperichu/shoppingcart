@@ -1,0 +1,46 @@
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  height: 550px;
+  background-color: #edea59f9;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  overflow: auto;
+  border: dashed;
+}
+
+.imagen-contenedor {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.imagen-carrito {
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-texto-carrito {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.nombre-carrito {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.texto-carrito {
+  background-color: lightcoral;
+  font-size: 1.1rem;
+  text-align: justify;
+}
