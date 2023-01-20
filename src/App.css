@@ -9,19 +9,16 @@ body {
   background-color: #c9c9c9;
 }
 
-h1 {
-  max-width: 940px;
-  font-size: 2.5em;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 40px 0;
-}
-
 .App {
   min-height: 100vh; /*altura minima*/
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 40px 0;
 }

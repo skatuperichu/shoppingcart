@@ -1,5 +1,5 @@
 import "./App.css";
-import Testimonio from "./componentes/Testimonio";
+import Cards from "./componentes/Cards";
 import { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -20,16 +20,16 @@ function App() {
     <Container className="App">
       <Container className="contenedor-principal">
         <h1>CARRITO DE COMPRAS:</h1>
-
         <Row>
           {data.map((product) => {
             const { title, description, image } = product;
             return (
               <Col xs={12} sm={6} md={4}>
-                <Testimonio
+                <Cards
+                  className="testimonio"
                   nombre={title}
                   imagen={image}
-                  testimonio={description}
+                  descripcion={description}
                 />
               </Col>
             );
@@ -42,4 +42,4 @@ function App() {
 
 export default App;
 
-//probar progress bar. max-height en el texto de la descripcion con if usando length.
+//probar progress bar.
