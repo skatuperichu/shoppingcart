@@ -6,7 +6,6 @@
 html,
 body {
   font-size: 18px;
-  background-color: #c9c9c9;
 }
 
 .App {
@@ -15,10 +14,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #292929;
 }
 
 h1 {
-  text-align: center;
-  font-family: sans-serif;
   margin: 40px 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
 }
