@@ -9,7 +9,6 @@ body {
 }
 
 .App {
-  min-height: 100vh; /*altura minima*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,4 +21,17 @@ h1 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   color: white;
+}
+
+img {
+  height: 250px;
+  width: 200px;
+  border: solid 30px;
+  border-color: red;
+}
+
+.card-body {
+  border: solid black 2px;
+  height: 170px;
+  overflow-y: scroll;
 }

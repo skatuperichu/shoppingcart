@@ -2,13 +2,14 @@ import React from "react";
 import "../hojas-de-estilo/Cards.css";
 import { Card } from "react-bootstrap";
 
-const vermas = () => {};
+const vermas = () => {
+  console.log(document.getElementById("text").length);
+};
 
 function Cards(props) {
   return (
     <Card className="card">
       <Card.Img variant="top" src={props.imagen} />
-
       <Card.Body>
         <Card.Title>{props.nombre}</Card.Title>
         <Card.Text className="cardText" id="text">

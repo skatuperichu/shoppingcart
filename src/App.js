@@ -20,13 +20,13 @@ function App() {
     <Container className="App">
       <Container className="contenedor-principal">
         <h1>CARRITO DE COMPRAS:</h1>
+        <div className="container-col"></div>
         <Row>
           {data.map((product) => {
             const { title, description, image } = product;
             return (
               <Col xs={12} sm={6} md={4}>
                 <Cards
-                  className="testimonio"
                   nombre={title}
                   imagen={image}
                   descripcion={description}
@@ -35,6 +35,7 @@ function App() {
             );
           })}
         </Row>
+        <div className="container-col"></div>
       </Container>
     </Container>
   );
