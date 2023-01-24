@@ -32,6 +32,4 @@ img {
 
 .card-body {
   border: solid black 2px;
-  height: 170px;
-  overflow-y: scroll;
 }

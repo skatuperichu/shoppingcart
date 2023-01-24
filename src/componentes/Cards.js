@@ -2,9 +2,7 @@ import React from "react";
 import "../hojas-de-estilo/Cards.css";
 import { Card } from "react-bootstrap";
 
-const vermas = () => {
-  console.log(document.getElementById("text").length);
-};
+const vermas = () => {};
 
 function Cards(props) {
   return (
@@ -12,7 +10,12 @@ function Cards(props) {
       <Card.Img variant="top" src={props.imagen} />
       <Card.Body>
         <Card.Title>{props.nombre}</Card.Title>
-        <Card.Text className="cardText" id="text">
+        <Card.Text
+          id="text"
+          className={`cardText ${
+            vermas(props.descripcion) ? "cardNewText" : null
+          }`}
+        >
           {props.descripcion}
         </Card.Text>
         <button

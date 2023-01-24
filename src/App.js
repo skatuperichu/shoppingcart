@@ -2,6 +2,8 @@ import "./App.css";
 import Cards from "./componentes/Cards";
 import { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   const [data, setData] = useState([]);
@@ -17,27 +19,11 @@ function App() {
   }, []);
 
   return (
-    <Container className="App">
-      <Container className="contenedor-principal">
-        <h1>CARRITO DE COMPRAS:</h1>
-        <div className="container-col"></div>
-        <Row>
-          {data.map((product) => {
-            const { title, description, image } = product;
-            return (
-              <Col xs={12} sm={6} md={4}>
-                <Cards
-                  nombre={title}
-                  imagen={image}
-                  descripcion={description}
-                />
-              </Col>
-            );
-          })}
-        </Row>
-        <div className="container-col"></div>
-      </Container>
-    </Container>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
