@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import ProductCard from "./Cards";
 
@@ -14,25 +14,25 @@ function Main() {
     getData();
   }, []);
 
-  <Container className="contenedor-principal">
+  return (
+    <>
     <h1>CARRITO DE COMPRAS:</h1>
-    <div className="container-col">
       <Row>
-        {data.map((product) => {
-          const { title, description, image } = product;
-          return (
+       {data.map((product) => {
+           const { title, description, image } = product;
+         return (
             <Col xs={12} sm={6} md={4} key={title}>
-              <ProductCard
-                nombre={title}
-                imagen={image}
-                descripcion={description}
-              />
-            </Col>
-          );
-        })}
+               <ProductCard
+                 nombre={title}
+                 imagen={image}
+                 descripcion={description}
+               />
+             </Col>
+           );
+         })}
       </Row>
-    </div>
-  </Container>;
+    </>
+  )
 }
 
 export default Main;
