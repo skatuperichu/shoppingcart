@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 
 const vermas = () => {};
 
-function Cards(props) {
+function ProductCard(props) {
   return (
     <Card className="card">
       <Card.Img variant="top" src={props.imagen} />
@@ -31,8 +31,4 @@ function Cards(props) {
   );
 }
 
-/*RETOS: 1)Agregar negrita a palabras del texto. 
-2)Hacer que el nombre de alt cambie dinamicamente
-3)Recopilar todos los testimonios en un solo objeto, en un archivo separado e importarlo
-max-height en el texto de la descripcion con if usando length. */
-export default Cards;
+export default ProductCard;

@@ -1,32 +1,19 @@
 import "./App.css";
-import Cards from "./componentes/Cards";
-import { useEffect, useState } from "react";
-import { Row, Col, Container } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Navigation from "./componentes/Navigation";
+import Main from "./componentes/Main";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
-  const [data, setData] = useState([]);
-  const getData = () => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch((e) => console.log(e));
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/productdetails" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
-//probar progress bar.

@@ -15,12 +15,17 @@ body {
   text-align: center;
   background-color: #292929;
 }
+.contenedor-principal {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellowgreen;
+}
 
 h1 {
   margin: 40px 0;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 img {
