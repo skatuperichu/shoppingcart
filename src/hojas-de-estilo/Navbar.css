@@ -1,13 +1,9 @@
-.navbar {
-  height: 100px;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  font-size: 16px;
+.navbar-brand {
+  margin-left: 10px;
+  margin-bottom: 9px;
+  border: 1.2px solid salmon;
+  border-radius: 6px;
+  border-right: 3px;
+  border-left: 3px;
+  margin-top: 3px;
 }

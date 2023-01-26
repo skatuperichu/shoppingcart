@@ -1,4 +1,3 @@
-import React from "react";
 import "../hojas-de-estilo/Cards.css";
 import { Card } from "react-bootstrap";
 
@@ -10,21 +9,14 @@ function ProductCard(props) {
       <Card.Img variant="top" src={props.imagen} />
       <Card.Body>
         <Card.Title>{props.nombre}</Card.Title>
-        <Card.Text
-          id="text"
-          className={`cardText ${
-            vermas(props.descripcion) ? "cardNewText" : null
-          }`}
-        >
-          {props.descripcion}
-        </Card.Text>
+        <Card.Text>{props.descripcion}</Card.Text>
         <button
           type="button"
           class="btn btn-outline-info"
           id="text_btn"
           onClick={vermas}
         >
-          Ver mas
+          Ver
         </button>
       </Card.Body>
     </Card>
