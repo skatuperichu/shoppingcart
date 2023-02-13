@@ -36,6 +36,11 @@ export default function Navigation() {
               Descripción
             </Link>
           </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/contact">
+              Contacto
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
