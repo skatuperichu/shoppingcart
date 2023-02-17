@@ -6,7 +6,7 @@ function Contact() {
         <ul>
           <li>Pedidos Online</li>
           <li>Locales</li>
-          <li>Productos, Catalogo y mas!</li>
+          <li>Productos, Catalogo</li>
           <li>Otras consultas</li>
           <li>Necesito comunicarme</li>
         </ul>

@@ -5,7 +5,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Home from "./pages/Home";
 import Products from "./pages/Productos";
 import ContactPage from "./pages/ContactPage";
-
+import Contact from "./componentes/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Products />} />
         <Route path="/descripcion" element={<ProductDetails />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
