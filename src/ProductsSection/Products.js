@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col } from "react-bootstrap";
-import ProductCard from "./Cards";
+import PlantillaProductos from "../componentes/PlantillaProductos";
 
-function Main() {
+function Products() {
   const [data, setData] = useState([]);
   const getData = () => {
     fetch("https://fakestoreapi.com/products")
@@ -11,26 +10,29 @@ function Main() {
       .catch((e) => console.log(e));
   };
   useEffect(() => {
-    getData(/*aca esta setData*/);
+    getData();
   }, []);
 
   return (
-    <>
-      <Row>
-        {data.map((product) => {
-          const { title, image } = product;
+    <div className="container-fluid">
+      <div className="row">
+        {data.map((props) => {
           return (
-            <Col xs={12} sm={6} md={4} key={title}>
-              <ProductCard nombre={title} imagen={image} />
-            </Col>
+            <PlantillaProductos
+              key={props.id}
+              productID={props.id}
+              image={props.image}
+              tilte={props.tilte}
+              description={props.description}
+            />
           );
         })}
-      </Row>
-    </>
+      </div>
+    </div>
   );
 }
 
-export default Main;
+export default Products;
 
 //HACER CARPETA PAGES (HOME, DETALLE, ABOUT)Y OTRA COMPONENTS(CARD, O LISTA DE CARDS(category: men / women), BARRA DE NAVEGACION).
 

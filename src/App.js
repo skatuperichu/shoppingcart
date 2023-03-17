@@ -1,22 +1,36 @@
+//Librerias
+import { Route, Routes } from "react-router-dom";
+
+//CSS
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navigation from "./componentes/Navigation";
-import ProductDetails from "./pages/ProductDetails";
-import Home from "./pages/Home";
-import Products from "./pages/Productos";
-import ContactPage from "./pages/ContactPage";
+
+//Componentes
+import Header from "./componentes/Header";
+import Home from "./componentes/Home";
 import Contact from "./componentes/Contact";
+import Products from "./ProductsSection/Products";
+import DetailCard from "./ProductsSection/DetailsProducts/DetailCard";
+import MenClothing from "./ProductsSection/MenClothing";
+import WomenClothing from "./ProductsSection/WomenClothing";
+import Jewelery from "./ProductsSection/Jewelery";
+import Electronics from "./ProductsSection/Electronics";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
+    <>
+      {" "}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Products />} />
-        <Route path="/descripcion" element={<ProductDetails />} />
+        <Route path="/descripcion/:id" element={<DetailCard />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/menclothing" element={<MenClothing />} />
+        <Route path="/womenclothing" element={<WomenClothing />} />
+        <Route path="/jewelery" element={<Jewelery />} />
+        <Route path="/electronics" element={<Electronics />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
