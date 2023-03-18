@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-
+//AGREGAR BOTON PARA VOLVER A LA LISTA DE PRODUCTOS.
 function DetailCard() {
   const { id } = useParams();
   const [data, setData] = useState(null);

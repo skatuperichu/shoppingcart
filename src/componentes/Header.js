@@ -7,27 +7,16 @@ function Header() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/">
-        <BsFillCartFill />
+        <BsFillCartFill style={{ marginBottom: "6px" }} />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <header class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style={{ alignItems: "center" }}>
           <li>
             <Link class="nav-link" to="/">
               <strong>Inicio</strong> <span class="sr-only" />
             </Link>
           </li>
-          <ul className="navbar-nav ">
+          <ul className="navbar-nav" style={{ alignItems: "center" }}>
             <li>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
