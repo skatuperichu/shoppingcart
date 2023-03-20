@@ -4,7 +4,7 @@ function Home() {
     <>
       <div>
         <h3>Bienvenido a </h3>
-        <h1>Carrito de Compras 3.1</h1>
+        <h1>Carrito de Compras</h1>
       </div>
       <div>
         <BsFillCartFill className="carrito" />

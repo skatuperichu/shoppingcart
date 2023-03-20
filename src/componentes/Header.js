@@ -6,7 +6,7 @@ import { Dropdown, DropdownButton } from "react-bootstrap";
 function Header() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="/" /*esta clase esta en Navbar.css */>
         <BsFillCartFill style={{ marginBottom: "6px" }} />
       </a>
       <header class="collapse navbar-collapse" id="navbarNav">
