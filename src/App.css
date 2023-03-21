@@ -35,16 +35,3 @@ h1 {
   margin-left: 450px;
   color: lightcoral;
 }
-
-img {
-  height: 100%;
-  margin: 0px;
-  border: solid 5px;
-  border-color: rgb(255, 251, 206);
-}
-
-.card-body {
-  border: solid black 2px;
-}
-
-/*Ordenar los lugares donde agrego estas clases*/

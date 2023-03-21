@@ -1,0 +1,13 @@
+img {
+  height: 100%;
+  margin: 0px;
+}
+
+.img-container {
+  padding: 10px;
+  border: solid black 1px;
+}
+
+.card-body {
+  border: solid black 1px;
+}

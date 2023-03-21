@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-//AGREGAR BOTON PARA VOLVER A LA LISTA DE PRODUCTOS.
+
 function DetailCard() {
   const { id } = useParams();
   const [data, setData] = useState(null);
@@ -16,7 +16,7 @@ function DetailCard() {
     return <div>Cargando...</div>;
   }
   return (
-    <div className="productoIndividual">
+    <div style={{ maxWidth: "600px", margin: "0 auto" }}>
       <Card className="card">
         <Card.Img src={data.image} />
         <Card.Body>
@@ -25,6 +25,14 @@ function DetailCard() {
           <Card.Text>${data.price}</Card.Text>
         </Card.Body>
       </Card>
+      <br />
+      <button
+        type="button"
+        class="btn btn-success"
+        onClick={() => window.history.back()}
+      >
+        Volver al listado
+      </button>
     </div>
   );
 }

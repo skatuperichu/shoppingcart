@@ -7,13 +7,13 @@ import "./App.css";
 //Componentes
 import Header from "./componentes/Header";
 import Home from "./componentes/Home";
-import Contact from "./componentes/Contact";
 import Products from "./ProductsSection/Products";
 import DetailCard from "./ProductsSection/DetailsProducts/DetailCard";
 import MenClothing from "./ProductsSection/MenClothing";
 import WomenClothing from "./ProductsSection/WomenClothing";
 import Jewelery from "./ProductsSection/Jewelery";
 import Electronics from "./ProductsSection/Electronics";
+import Footer from "./componentes/Footer";
 
 function App() {
   return (
@@ -24,12 +24,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Products />} />
         <Route path="/descripcion/:id" element={<DetailCard />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/menclothing" element={<MenClothing />} />
         <Route path="/womenclothing" element={<WomenClothing />} />
         <Route path="/jewelery" element={<Jewelery />} />
         <Route path="/electronics" element={<Electronics />} />
       </Routes>
+      <Footer />
     </>
   );
 }

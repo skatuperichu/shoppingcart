@@ -1,4 +1,5 @@
 import { BsFillCartFill } from "react-icons/bs";
+
 function Home() {
   return (
     <>

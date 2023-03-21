@@ -39,13 +39,6 @@ function Header() {
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li>
-              <Link class="nav-link" to="/contact">
-                <button type="button" class="btn btn-info">
-                  Contacto
-                </button>
-              </Link>
-            </li>
           </ul>
         </ul>
       </header>
